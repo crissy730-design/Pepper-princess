@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pepper Princess Hot Sauce</title>
+    <style>
+        :root {
+            --primary-teal: #008080;
+            --dark-teal: #004d4d;
+            --accent-gold: #ffbf00;
+            --warm-red: #d9534f;
+            --light-bg: #f4f9f9;
+            --dark-text: #2c3e50;
+        }
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body {
+            background-color: var(--light-bg);
+            color: var(--dark-text);
+            line-height: 1.6;
+        }
+        header {
+            background-color: var(--primary-teal);
+            color: white;
+            text-align: center;
+            padding: 2.5rem 1rem;
+            border-bottom: 5px solid var(--accent-gold);
+        }
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            letter-spacing: 1px;
+        }
+        header p {
+            font-style: italic;
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+        .container {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+        .featured-sauce {
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            padding: 2rem;
+            margin-bottom: 2rem;
+            border-left: 6px solid var(--warm-red);
+        }
+        .badge {
+            background-color: var(--warm-red);
+            color: white;
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+            font-weight: bold;
+            font-size: 0.85rem;
+            display: inline-block;
+            margin-bottom: 1rem;
+        }
+        .sauce-title {
+            font-size: 1.8rem;
+            color: var(--dark-teal);
+            margin-bottom: 0.5rem;
+        }
+        .sauce-description {
+            font-size: 1.1rem;
+            margin-bottom: 1.5rem;
+            color: #555;
+        }
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            background: var(--light-bg);
+            padding: 1rem;
+            border-radius: 8px;
+            margin-bottom: 1.5rem;
+        }
+        .info-item h4 {
+            color: var(--primary-teal);
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            margin-bottom: 0.2rem;
+        }
+        .info-item p {
+            font-weight: 600;
+        }
+        .guidelines {
+            background-color: #fff9e6;
+            border: 1px solid #ffe0b2;
+            padding: 1rem;
+            border-radius: 8px;
+            margin-top: 1rem;
+        }
+        .guidelines h4 {
+            color: #b78103;
+            margin-bottom: 0.3rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        .sauce-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+        .sauce-card {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+            text-align: center;
+            border-top: 4px solid var(--primary-teal);
+        }
+        .sauce-card.placeholder {
+            border-top: 4px dashed #ccc;
+            background: #fafafa;
+            color: #777;
+        }
+        footer {
+            text-align: center;
+            padding: 2rem 1rem;
+            margin-top: 4rem;
+            font-size: 0.9rem;
+            color: #777;
+            border-top: 1px solid #e0e0e0;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Pepper Princess</h1>
+        <p>Handcrafted Homegrown Hot Sauces</p>
+    </header>
+
+    <div class="container">
+        
+        <div class="featured-sauce">
+            <span class="badge">Current Batch</span>
+            <h2 class="sauce-title">Jamaican Me Crazy</h2>
+            <p class="sauce-description">A sweet & smokey Caribbean blend featuring robust flavors with a perfectly balanced warm heat level.</p>
+            
+            <div class="info-grid">
+                <div class="info-item">
+                    <h4>Heat Level</h4>
+                    <p style="color: #e67e22;">WARM / SAVORY</p>
+                </div>
+                <div class="info-item">
+                    <h4>Packaged On</h4>
+                    <p>October 21, 2026</p>
+                </div>
+                <div class="info-item">
+                    <h4>Use By</h4>
+                    <p>April 21, 2027</p>
+                </div>
+            </div>
+
+            <div class="guidelines">
+                <h4>⚠️ Storage & Safety Notice</h4>
+                <p>This is a fresh, artisanal refrigerator sauce made without industrial artificial preservatives. Please <strong>KEEP REFRIGERATED</strong> at all times to maintain peak flavor intensity and safety. Best enjoyed within 6 months of packaging.</p>
+            </div>
+        </div>
+
+        <h3 style="color: var(--dark-teal); margin-top: 3rem; margin-bottom: 1rem;">Our Royal Varieties</h3>
+        <p style="color: #666; margin-bottom: 1.5rem;">Scan your bottle's QR code anytime to check active ingredients, batch tracking details, or upcoming seasonal flavors straight from our home garden plots.</p>
+        
+        <div class="sauce-list">
+            <div class="sauce-card">
+                <h4 style="color: var(--primary-teal); margin-bottom: 0.5rem;">Jamaican Me Crazy</h4>
+                <p style="font-size: 0.9rem; color: #666;">Sweet & Smokey Caribbean Blend</p>
+                <p style="margin-top: 0.5rem; font-weight: bold; color: var(--warm-red);">Available Now</p>
+            </div>
+            <div class="sauce-card placeholder">
+                <h4 style="margin-bottom: 0.5rem;">Next Small Batch...</h4>
+                <p style="font-size: 0.9rem;">Fresh recipes currently simmering</p>
+                <p style="margin-top: 0.5rem; font-style: italic;">Coming Soon</p>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Pepper Princess Hot Sauce. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
