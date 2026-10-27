@@ -1,0 +1,62 @@
+================================================================================
+          PEPPER PRINCESS WEBSITE LAUNCH BLUEPRINT (OCTOBER 2026)
+================================================================================
+
+STEP 1: DOMAIN REGISTRATION
+--------------------------------------------------------------------------------
+1. Go to a domain registrar (e.g., Namecheap, Porkbun, or Squarespace Domains).
+2. Search for: pepperprincess.com
+3. Purchase the domain (typically $10–$15/year).
+4. Leave the default DNS settings as-is for now.
+
+STEP 2: FREE WEB HOSTING (CHOOSE ONE OPTION)
+--------------------------------------------------------------------------------
+OPTION A: NETLIFY (Fastest & Easiest)
+1. Place your "index.html" file inside a new folder on your desktop.
+2. Go to Netlify.com and sign up for a free starter account.
+3. Navigate to the "Sites" tab in your Netlify dashboard.
+4. Drag and drop your desktop folder directly into the deployment upload box.
+5. Your site is instantly live at a temporary "xxxx.netlify.app" URL.
+
+OPTION B: GITHUB PAGES (Best for tracking code revisions)
+1. Go to GitHub.com and sign up for a free account.
+2. Click "New Repository". Name it exactly: pepper-princess
+3. Set visibility to "Public" and check the box to "Add a README file".
+4. Inside the repository, click "Add file" > "Upload files".
+5. Drag your "index.html" file into the window and click "Commit changes".
+6. Go to the repository "Settings" tab, then click "Pages" on the left menu.
+7. Under "Build and deployment", change the Source Branch to "main" or "master".
+8. Click "Save". Your site goes live at: yourusername.github.io/pepper-princess
+
+STEP 3: CONNECT CUSTOM DOMAIN TO HOST
+--------------------------------------------------------------------------------
+IF USING NETLIFY:
+1. In Netlify, go to Site Configuration > Domain Management > Add Custom Domain.
+2. Enter: pepperprincess.com
+3. Netlify will generate 4 unique Nameserver lines. Copy them.
+4. Log into your domain registrar, find "Custom Nameservers", and paste them in.
+
+IF USING GITHUB PAGES:
+1. In GitHub Pages settings, scroll to "Custom domain" and enter: pepperprincess.com
+2. Log into your domain registrar's DNS panel.
+3. Add an "A Record" pointing "@" to GitHub's IP addresses:
+   - 185.199.108.153
+   - 185.199.109.153
+   - 185.199.110.153
+   - 185.199.111.153
+4. Add a "CNAME Record" pointing "www" to your username.github.io.
+
+*Note: Global domain connection (DNS propagation) can take up to 24 hours.*
+
+STEP 4: GENERATE THE QR CODE
+--------------------------------------------------------------------------------
+1. Go to an online dynamic QR code platform (e.g., QRCode Monkey, QR Code Generator).
+2. Select "Dynamic QR Code" (so you can change the target destination link later 
+   without re-printing labels).
+3. Set the destination URL to: https://pepperprincess.com
+4. Download or export the QR code image using high-resolution formats (PNG or SVG).
+5. Drop the file directly into your 2.75" back-of-bottle label design layout.
+
+================================================================================
+               SHAKE WELL  •  KEEP REFRIGERATED  •  LIVE SPICY
+================================================================================
